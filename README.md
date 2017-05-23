@@ -1,0 +1,2 @@
+# AndroidAppPermissionManager
+android 跳转到应用的权限管理界面 适用于动态请求权限被拒绝后手动打开权限
