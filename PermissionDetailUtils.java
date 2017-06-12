@@ -83,7 +83,7 @@ public class PermissionDetailUtils {
     /**
      * 跳转到miui的权限管理页面
      */
-    public static Intent gotoMiuiPermission(Context context) {
+    private static Intent gotoMiuiPermission(Context context) {
         Intent intent = new Intent("miui.intent.action.APP_PERM_EDITOR");
         intent.putExtra("extra_pkgname", context.getApplicationContext().getPackageName());
         return intent;
@@ -93,7 +93,7 @@ public class PermissionDetailUtils {
     /**
      * 跳转到华为的权限管理页面
      */
-    public static Intent gotoHuaWeiPermission(Context context) {
+    private static Intent gotoHuaWeiPermission(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("packageName", context.getApplicationContext().getPackageName());
@@ -105,7 +105,7 @@ public class PermissionDetailUtils {
     /**
      * 跳转到魅族的权限管理页面
      */
-    public static Intent gotoMeiZuPermission(Context context) {
+    private static Intent gotoMeiZuPermission(Context context) {
         Intent intent = new Intent("com.meizu.safe.security.SHOW_APPSEC");
         intent.addCategory(Intent.CATEGORY_DEFAULT);
         intent.putExtra("packageName", context.getApplicationContext().getPackageName());
@@ -115,7 +115,7 @@ public class PermissionDetailUtils {
     /**
      * 跳转到索尼的权限管理页面
      */
-    public static Intent gotoSonyPermission(Context context) {
+    private static Intent gotoSonyPermission(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("packageName", context.getApplicationContext().getPackageName());
@@ -127,7 +127,7 @@ public class PermissionDetailUtils {
     /**
      * 跳转到Oppo的权限管理页面
      */
-    public static Intent gotoOppoPermission(Context context) {
+    private static Intent gotoOppoPermission(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("packageName", context.getApplicationContext().getPackageName());
@@ -139,7 +139,7 @@ public class PermissionDetailUtils {
     /**
      * 跳转到Lg的权限管理页面
      */
-    public static Intent gotoLgPermission(Context context) {
+    private static Intent gotoLgPermission(Context context) {
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("packageName", context.getApplicationContext().getPackageName());
@@ -151,7 +151,7 @@ public class PermissionDetailUtils {
     /**
      * 跳转到乐视的权限管理页面
      */
-    public static Intent gotoLePermission(Context context) {
+    private static Intent gotoLePermission(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("packageName", context.getApplicationContext().getPackageName());
@@ -163,7 +163,7 @@ public class PermissionDetailUtils {
     /**
      * 跳转到360手机的权限管理页面
      */
-    public static Intent goto360Permission(Context context) {
+    private static Intent goto360Permission(Context context) {
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("packageName", context.getApplicationContext().getPackageName());
